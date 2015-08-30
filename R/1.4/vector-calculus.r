@@ -7,12 +7,16 @@ names(roulette_vector) <- days_vector
 
 # Total winnings with poker: total_poker
 total_poker <- sum(poker_vector)
+# Print total_poker
+print(total_poker)
 
 # Total winnings with roulette: total_roulette
 total_roulette <- sum(roulette_vector)
+# Print total_roulette
+print(total_roulette)
 
 # Total winnings overall: total_week
 total_week <- total_poker + total_roulette
 
 # Print total_week
-total_week
+print(total_week)
