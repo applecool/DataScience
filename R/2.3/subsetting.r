@@ -57,3 +57,17 @@ print(selection_vector)
 # Select amounts for profitable poker days: poker_profits
 poker_profits <- poker_vector[selection_vector]
 print(poker_profits)
+
+# Select amounts for profitable roulette days: roulette_profits
+#roulette_vector > 0 is a selection vector
+roulette_profits <- roulette_vector[roulette_vector >0]
+print(roulette_profits)
+
+# Sum of the profitable roulette days: roulette_total_profit
+roulette_total_profit <- sum(roulette_profits)
+print(roulette_total_profit)
+
+# Number of profitable roulette days: num_profitable_days
+#sum of the logical vector counts the number of TRUE values and returns the total number
+num_profitable_days <- sum(roulette_vector > 0)
+print(num_profitable_days)
