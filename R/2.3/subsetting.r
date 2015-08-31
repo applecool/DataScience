@@ -34,3 +34,9 @@ print(roulette_thursday)
 # Select Tuesday's poker gains: poker_tuesday
 poker_tuesday <- poker_vector["Tuesday"]
 print(poker_tuesday)
+
+# Select the first three elements from poker_vector: poker_start
+poker_start <- poker_vector[c("Monday","Tuesday","Wednesday")]
+
+# Calculate the average poker gains during the first three days: avg_poker_start
+avg_poker_start <- mean(poker_vector[1:3])
