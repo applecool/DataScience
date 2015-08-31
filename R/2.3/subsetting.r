@@ -21,3 +21,16 @@ print(poker_midweek)
 # End-of-week roulette results: roulette_endweek
 roulette_endweek <- roulette_vector[c(4,5)]
 print(roulette_endweek)
+
+# Roulette results for Tuesday to Friday inclusive: colon operator
+roulette_subset <- roulette_vector[2:5]
+print(roulette_subset)
+
+#Accessing by Names
+# Select Thursday's roulette gains: roulette_thursday 
+roulette_thursday <- roulette_vector["Thursday"]
+print(roulette_thursday)
+
+# Select Tuesday's poker gains: poker_tuesday
+poker_tuesday <- poker_vector["Tuesday"]
+print(poker_tuesday)
