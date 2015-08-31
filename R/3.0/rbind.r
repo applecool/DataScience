@@ -11,3 +11,11 @@ print(star_wars_matrix)
 colnames(star_wars_matrix) <- c("US","non-US")
 rownames(star_wars_matrix) <- c("A New Hope","The Empire Strikes Back","Return of the Jedi")
 print(star_wars_matrix)
+
+# Calculate the worldwide box office: worldwide_vector
+worldwide_vector <- rowSums(star_wars_matrix)
+print(worldwide_vector)
+
+# Bind the new variable worldwide_vector as a column to star_wars_matrix: star_wars_ext
+star_wars_ext <- cbind(star_wars_matrix, worldwide_vector)
+print(star_wars_ext)
