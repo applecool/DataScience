@@ -33,3 +33,12 @@ print(star_wars_matrix[c(1,3),c(1,2)])
 #can be solved in the following way too
 # All figures for "A New Hope" and "Return of the Jedi"
 print(star_wars_matrix[c(1,3),])
+
+# Select the US revenues for "A New Hope" and "The Empire Strikes Back"
+print(star_wars_matrix[c("new_hope","empire_strikes"), 1])
+
+# Select the last two rows and both columns
+print(star_wars_matrix[c(FALSE,TRUE,TRUE), c(TRUE,TRUE)])
+
+# Select the non-US revenue for "The Empire Strikes Back"
+print(star_wars_matrix[c(FALSE,TRUE,FALSE), c(FALSE, TRUE)])
