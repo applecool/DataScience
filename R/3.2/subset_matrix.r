@@ -12,3 +12,17 @@ print(star_wars_matrix[2,1])
 
 # non-US box office revenue for "A New Hope"
 print(star_wars_matrix[1,2])
+
+# Select all US box office revenue
+print(star_wars_matrix[,1])
+
+# Select revenue for "A New Hope"
+print(star_wars_matrix[1,])
+
+# Average non-US revenue per movie: non_us_all
+non_us_all <- mean(star_wars_matrix[,2])
+print(non_us_all)
+
+# Average non-US revenue of first two movies: non_us_some
+non_us_some <- mean(star_wars_matrix[c(1,2),2])
+print(non_us_some)
