@@ -40,3 +40,20 @@ poker_start <- poker_vector[c("Monday","Tuesday","Wednesday")]
 
 # Calculate the average poker gains during the first three days: avg_poker_start
 avg_poker_start <- mean(poker_vector[1:3])
+
+# Roulette results for day 1, 3 and 5: roulette_subset
+roulette_subset <- roulette_vector[c("Monday","Wednesday","Friday")]
+
+# Poker results for first three days: poker_start Logical subsets
+poker_start <- poker_vector[c(TRUE, TRUE, TRUE, FALSE, FALSE)]
+
+print(poker_start)
+
+
+# Create logical vector corresponding to profitable poker days: selection_vector
+selection_vector <- poker_vector >0
+print(selection_vector)
+
+# Select amounts for profitable poker days: poker_profits
+poker_profits <- poker_vector[selection_vector]
+print(poker_profits)
