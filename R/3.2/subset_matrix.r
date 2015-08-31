@@ -26,3 +26,10 @@ print(non_us_all)
 # Average non-US revenue of first two movies: non_us_some
 non_us_some <- mean(star_wars_matrix[c(1,2),2])
 print(non_us_some)
+
+# All figures for "A New Hope" and "Return of the Jedi"
+print(star_wars_matrix[c(1,3),c(1,2)])
+
+#can be solved in the following way too
+# All figures for "A New Hope" and "Return of the Jedi"
+print(star_wars_matrix[c(1,3),])
