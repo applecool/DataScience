@@ -15,3 +15,9 @@ my_super_list <- list(my_vector,my_matrix,my_factor,my_list)
 
 # Display structure of my_super_list
 str(my_super_list)
+
+# Construct my_list with these different elements
+my_list <- list(vec=my_vector, mat= my_matrix, fac=my_factor)
+
+# Print my_list to the console
+print(my_list)
