@@ -12,3 +12,12 @@ print(summary(survey_vector))
 
 # Summarize survey_factor
 print(summary(survey_factor))
+
+# First element from survey_factor: right
+right <- survey_factor[1]
+
+# Second element from survey_factor: left
+left <- survey_factor[2]
+
+# Right 'greater than' left?
+right > left
