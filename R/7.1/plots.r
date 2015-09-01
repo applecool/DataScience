@@ -8,3 +8,10 @@ plot(movies$genre)
 
 # Plot the genre variable against the rating variable
 plot(movies$genre, movies$rating)
+
+
+# Plot the runtime variable of movies
+plot(movies$runtime)
+
+# Plot rating (x) against runtime (y)
+plot(movies$rating, movies$runtime)
