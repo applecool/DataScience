@@ -6,3 +6,9 @@ survey_factor <- factor(survey_vector, levels = c("R","L"), labels=c("Right","Le
 
 # Print survey_factor
 survey_factor
+
+# Summarize survey_vector
+print(summary(survey_vector))
+
+# Summarize survey_factor
+print(summary(survey_factor))
