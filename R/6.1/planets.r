@@ -20,3 +20,8 @@ planets_df <- data.frame(planets, type_factor, diameter, rotation, rings, string
 
 # Display the structure of planets_df
 str(planets_df)
+
+# Improve the names of planets_df
+names(planets_df) <- c("name","type","diameter","rotation","has_rings")
+str(planets_df)
+print(planets_df)
