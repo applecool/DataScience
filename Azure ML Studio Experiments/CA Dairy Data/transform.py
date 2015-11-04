@@ -8,7 +8,7 @@ def azureml_main(frame1):
 ## If in Azure, the data frame is passed to the function,
 ## If running in the IDE, load it from a local file
   if(Azure == False):
-    pathName = "C://DAT203xLabfiles"
+    pathName = "/Users/ShellZero/" #replace with your path
     fileName = "cadairydata.csv"
     filePath = os.path.join(pathName, fileName)
     frame1 = pd.read_csv(filePath)
