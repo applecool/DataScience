@@ -3,7 +3,7 @@ def azureml_main(frame1):
   import os.path
 
 ## Set a flag to define the environment
-  Azure = False 
+  Azure = False #toggle this to True when using it in Azure ML studio
 
 ## If in Azure, the data frame is passed to the function,
 ## If running in the IDE, load it from a local file
